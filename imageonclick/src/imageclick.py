@@ -6,8 +6,10 @@ from geometry_msgs.msg import Point
 import serial
 
 
-
-ser = serial.Serial('/dev/ttyACM0')
+try:
+    ser = serial.Serial('/dev/ttyACM0')
+except:
+    print("port in not connected")
 encoder_x = 350000
 encoder_z = 21600
 frame_x = 440
