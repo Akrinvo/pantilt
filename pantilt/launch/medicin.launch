@@ -5,6 +5,6 @@
    
   </node>
 <node name ="pantilt" pkg = "pantilt" type="pantilt_node"></node>
-<node name ="imageonclick" pkg ="imageonclick" type ="imageclick.py"></node>
+<node name ="imageonclick" pkg ="imageonclick" type ="imageclick.py" output = "screen"></node>
 
 </launch>
